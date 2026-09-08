@@ -55,3 +55,16 @@ result = (prescribed_qty * target_equiv) / prescribed_equiv
 
 st.divider()
 st.success(f"**Conversion Result:** Replace **{prescribed_qty}g** of *{prescribed_food}* with **{result:.1f}g** of *{target_food}*.")
+
+# Footer with legal disclaimer, full bibliographic citation, and ISBN
+st.markdown(
+    """
+    <div style="text-align: center; font-size: 0.85em; color: #666; margin-top: 40px;">
+        <p><strong>Disclaimer:</strong> Questa applicazione è uno strumento di calcolo basato sul metodo delle proporzioni con gli equivalenti.</p>
+        <p>I contenuti, le tabelle di conversione e la metodologia sono tratti dall'opera di <strong>Raffaele Scarabelli</strong>.</p>
+        <p><strong>Fonte / Citazione:</strong> Scarabelli, R. (2025). <em>La dieta della vita vera. Il metodo per raggiungere la forma fisica senza rinunciare a se stessi</em>. Vallardi A. (ISBN: 979-1222202563)</p>
+        <p>© Tutti i diritti riservati a Raffaele Scarabelli e all'editore.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
